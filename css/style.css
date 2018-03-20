@@ -1,0 +1,931 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  overflow-x: hidden; }
+
+body {
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/*================ section HOME   ================*/
+.section-home {
+  background: url("../img/main-background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  /*================    navbar   ================*/ }
+  .section-home .bg-overlay {
+    background: rgba(128, 0, 128, 0.3);
+    height: 600px; }
+  .section-home .main-nav {
+    background: transparent;
+    height: 63px;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 1; }
+    .section-home .main-nav .open-slide {
+      position: absolute;
+      top: 15px;
+      right: 15px; }
+    .section-home .main-nav .top-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-gap: 4px;
+      display: grid;
+      grid-template-areas: 'logo main-nav ul'; }
+      .section-home .main-nav .top-container .social-icon {
+        padding-left: 10px;
+        font-size: 1.2em; }
+    .section-home .main-nav .logo a {
+      display: grid;
+      font-weight: bold;
+      padding: 0.1rem 0.4rem;
+      color: #fefefe;
+      letter-spacing: 1px;
+      margin-left: 10px;
+      margin-top: -0.4rem;
+      font-size: 2rem; }
+    .section-home .main-nav ul {
+      display: grid;
+      padding: 0;
+      list-style-type: none;
+      grid-template-columns: repeat(5, 1fr); }
+    .section-home .main-nav a {
+      display: block;
+      text-decoration: none;
+      padding: 0.3rem;
+      text-align: center;
+      color: #fefefe;
+      font-size: 1rem; }
+    .section-home .main-nav a:hover {
+      color: #fff; }
+    .section-home .main-nav .btn-login {
+      background: #b300b3;
+      display: block;
+      border-radius: 2px; }
+  .section-home .side-nav {
+    height: auto;
+    text-align: center;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(26, 0, 26, 0.9);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; }
+    .section-home .side-nav a {
+      padding: 10px 10px 10px 30px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #ccc;
+      display: block;
+      transition: 0.3s; }
+    .section-home .side-nav a:hover {
+      color: #fff; }
+    .section-home .side-nav .btn-close {
+      position: absolute;
+      top: 0;
+      right: 22px;
+      font-size: 36px;
+      margin-left: 50px; }
+    .section-home .side-nav .logoHidden {
+      color: #fefefe;
+      position: absolute;
+      top: 0;
+      left: 20px; }
+  .section-home .main-text {
+    max-width: 800px;
+    margin: auto;
+    padding: 6rem 3rem;
+    text-align: center; }
+    .section-home .main-text span {
+      color: #fefefe;
+      font-size: 1.5rem; }
+    .section-home .main-text p {
+      color: #fefefe;
+      line-height: 1.6rem; }
+    .section-home .main-text h1 {
+      color: #fefefe;
+      font-size: 4rem;
+      margin: 0;
+      padding-top: 0.7rem; }
+    .section-home .main-text .main-buttons {
+      margin-top: 1.5rem; }
+      .section-home .main-text .main-buttons .btn-learnMore {
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        border: 0;
+        color: #b300b3;
+        background: #fefefe; }
+      .section-home .main-text .main-buttons .btn-signUp {
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        background: #b300b3;
+        border: 0;
+        color: #fefefe; }
+
+/*================ boxes   ================*/
+.boxes {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  .boxes .box {
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 5px 6px rgba(104, 104, 104, 0.6); }
+    .boxes .box .icon-custom {
+      font-size: 4em;
+      color: #5537AF; }
+
+/*================ about   ================*/
+.about {
+  padding: 3rem 0;
+  background: #F5F4F6; }
+  .about .columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px; }
+    .about .columns .column-1 {
+      text-align: center;
+      padding: 0 2rem; }
+      .about .columns .column-1 span {
+        color: #5537AF; }
+      .about .columns .column-1 p {
+        font-size: 1.5rem;
+        color: #8c8c8c;
+        line-height: 1.5em; }
+      .about .columns .column-1 h2 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        margin-top: 0; }
+    .about .columns .column-2 img {
+      width: 90%;
+      border-radius: 50%; }
+  .about .bg-parallax-1 {
+    margin-top: 3rem;
+    background: url("../img/bg-parallax.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 120px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    display: grid; }
+    .about .bg-parallax-1 .bg-parallax-overlay {
+      background: rgba(128, 0, 128, 0.7);
+      display: grid;
+      height: 120px; }
+    .about .bg-parallax-1 h2 {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      font-size: 2.5rem;
+      color: #fefefe;
+      padding: 0 2rem; }
+
+/*================ testimonials   ================*/
+.testimonials h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1rem 2rem; }
+
+.testimonials .boxes-story {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  padding: 0 0 3rem;
+  margin: 0 1rem;
+  border-bottom: 1px solid #ddd; }
+  .testimonials .boxes-story .box {
+    text-align: center;
+    padding: 1rem;
+    transition: 0.3s;
+    margin-right: 1rem; }
+    .testimonials .boxes-story .box h3 {
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #5537AF; }
+    .testimonials .boxes-story .box .btn-readStory {
+      padding: 0.5rem 1rem;
+      background: #5537AF;
+      border: 0;
+      border-radius: 3px;
+      font-size: 1rem;
+      color: #fefefe;
+      text-decoration: none; }
+    .testimonials .boxes-story .box img {
+      max-width: 50%;
+      min-width: 250px;
+      border-radius: 50%;
+      border: 3px solid #fff; }
+  .testimonials .boxes-story .box:hover {
+    background: rgba(128, 0, 128, 0.6);
+    color: #fefefe;
+    transform: scale(1.1, 1.1); }
+
+.testimonials .four-boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center; }
+  .testimonials .four-boxes .box {
+    padding: 1rem;
+    margin: 0 1rem;
+    background: #F5F4F6; }
+    .testimonials .four-boxes .box .icon-custom {
+      font-size: 2em;
+      color: #5537AF; }
+    .testimonials .four-boxes .box h3 {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem; }
+    .testimonials .four-boxes .box p {
+      margin: 0;
+      font-size: 0.9rem; }
+
+.bg-parallax-2 {
+  margin-top: 3rem;
+  background: url("../img/bg-parallax-2.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 120px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  display: grid;
+  overflow: hidden; }
+  .bg-parallax-2 .bg-parallax-overlay {
+    background: rgba(128, 0, 128, 0.7);
+    display: grid;
+    height: 120px; }
+    .bg-parallax-2 .bg-parallax-overlay .blocks {
+      text-align: center;
+      display: grid;
+      max-width: 1000px;
+      grid-gap: 20px;
+      margin: auto;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 2rem; }
+      .bg-parallax-2 .bg-parallax-overlay .blocks .block-1 h2 {
+        color: #fefefe;
+        margin-top: 0;
+        font-size: 2rem; }
+      .bg-parallax-2 .bg-parallax-overlay .blocks .block-1 p {
+        color: #fefefe;
+        text-align: left; }
+      .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        border: 0;
+        background: #5537AF;
+        color: #fefefe;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px black; }
+        .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen .bg-parallax-2 {
+          margin-top: 3rem;
+          background: url("../img/bg-parallax-2.jpeg") no-repeat;
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          height: 20vh;
+          border-top: 5px solid black;
+          border-bottom: 5px solid black;
+          display: grid; }
+          .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen .bg-parallax-2 .bg-parallax-overlay {
+            background: rgba(128, 0, 128, 0.7);
+            display: grid; }
+            .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen .bg-parallax-2 .bg-parallax-overlay .blocks {
+              text-align: center;
+              display: grid;
+              max-width: 1000px;
+              grid-gap: 20px;
+              margin: auto;
+              grid-template-columns: 1fr 1fr;
+              padding: 0 2rem; }
+              .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen .bg-parallax-2 .bg-parallax-overlay .blocks .block-1 h2 {
+                color: #fefefe;
+                margin-top: 0;
+                font-size: 2rem; }
+              .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen .bg-parallax-2 .bg-parallax-overlay .blocks .block-1 p {
+                color: #fefefe;
+                text-align: left; }
+              .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen {
+                margin-top: 1.5rem;
+                padding: 0.5rem 2rem;
+                font-size: 1.5rem;
+                border: 0;
+                background: #5537AF;
+                color: #fefefe;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px black; }
+                .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen .icon-custom {
+                  margin-right: 10px;
+                  font-size: 1.3em;
+                  color: #fefefe; }
+        .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen .icon-custom {
+          margin-right: 10px;
+          font-size: 1.3em;
+          color: #fefefe; }
+
+.gallery {
+  text-align: center;
+  padding: 0.5rem 1rem; }
+  .gallery h2 {
+    font-size: 2.5rem; }
+  .gallery .gallery-boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .gallery .gallery-boxes .box {
+      padding: 0.5rem 1rem; }
+      .gallery .gallery-boxes .box .hovereffect {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        min-height: 250px;
+        max-height: 250px;
+        background: purple; }
+        .gallery .gallery-boxes .box .hovereffect .overlay {
+          position: absolute;
+          top: 40%;
+          left: 47%;
+          opacity: 0;
+          transition: all 0.3s;
+          transform: scale(0.4); }
+          .gallery .gallery-boxes .box .hovereffect .overlay .icon-plus {
+            font-size: 2em;
+            color: #fff;
+            position: relative;
+            z-index: 100; }
+        .gallery .gallery-boxes .box .hovereffect img {
+          width: 100%;
+          min-height: 250px;
+          max-height: 250px;
+          border: 1px solid #ddd;
+          transition: all 0.3s;
+          position: relative;
+          z-index: 2; }
+        .gallery .gallery-boxes .box .hovereffect img:hover {
+          width: 100%;
+          min-height: 250px;
+          max-height: 250px;
+          border: 1px solid #ddd;
+          transform: scale(1.2); }
+      .gallery .gallery-boxes .box .hovereffect:hover img {
+        opacity: 0.4; }
+      .gallery .gallery-boxes .box .hovereffect:hover .overlay {
+        opacity: 1;
+        transform: scale(1); }
+
+.footer {
+  background: #5537AF;
+  padding: 1rem 2rem; }
+  .footer .blocks {
+    margin: auto;
+    display: grid;
+    grid-gap: 50px;
+    padding: 0 1rem;
+    grid-template-columns: repeat(3, 1fr); }
+    .footer .blocks h3 {
+      max-width: 80%;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #fefefe; }
+    .footer .blocks .block-1 {
+      color: #fefefe; }
+    .footer .blocks .block-2 {
+      color: #fefefe; }
+      .footer .blocks .block-2 ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .footer .blocks .block-2 ul li {
+          display: inline; }
+          .footer .blocks .block-2 ul li a {
+            color: #fefefe;
+            text-decoration: none; }
+            .footer .blocks .block-2 ul li a .icon-social {
+              font-size: 2em;
+              padding-left: 0.5rem; }
+    .footer .blocks .block-3 {
+      color: #fefefe; }
+      .footer .blocks .block-3 ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .footer .blocks .block-3 ul li a {
+          color: #fefefe;
+          text-decoration: none; }
+
+/*================ MEDIA QUERIES   ================*/
+@media (max-width: 767px) {
+  .section-home .main-nav ul {
+    display: none; }
+  .section-home .main-text {
+    padding: 2rem 1rem; }
+    .section-home .main-text h1 {
+      font-size: 3rem; }
+  .about .columns {
+    grid-template-columns: 1fr;
+    text-align: center; }
+    .about .columns .column-1 {
+      text-align: center;
+      padding: 0 1rem; }
+      .about .columns .column-1 p {
+        font-size: 1.3rem;
+        margin-top: 0; }
+      .about .columns .column-1 h2 {
+        font-size: 2.5rem; }
+    .about .columns .column-2 img {
+      width: 60%;
+      min-width: 300px; }
+  .about .bg-parallax-1 {
+    text-align: center;
+    height: 25vh; }
+    .about .bg-parallax-1 .bg-parallax-overlay {
+      height: 25vh; }
+    .about .bg-parallax-1 h2 {
+      font-size: 2rem;
+      padding: 0 2rem; }
+  .testimonials h2 {
+    font-size: 2rem;
+    padding: 0 1rem; }
+  .bg-parallax-2 {
+    height: 25vh; }
+    .bg-parallax-2 .bg-parallax-overlay {
+      height: 25vh; }
+      .bg-parallax-2 .bg-parallax-overlay .blocks {
+        grid-template-columns: 1fr; }
+        .bg-parallax-2 .bg-parallax-overlay .blocks .block-1 h2 {
+          margin: 0;
+          font-size: 1.5rem; }
+        .bg-parallax-2 .bg-parallax-overlay .blocks .block-1 p {
+          display: none; }
+        .bg-parallax-2 .bg-parallax-overlay .blocks .block-2 .btn-listen {
+          margin-top: -0.8rem;
+          padding: 0.3rem 1.5rem; }
+  .footer {
+    padding-bottom: 3rem; }
+    .footer .blocks {
+      grid-template-columns: 1fr; } }
+
+@media (max-width: 400px) {
+  .section-home {
+    height: 450px; }
+    .section-home .bg-overlay {
+      height: 450px; }
+    .section-home .main-text {
+      padding: 1rem; }
+      .section-home .main-text span {
+        display: none; }
+      .section-home .main-text h1 {
+        font-size: 2rem; } }
+
+@media (min-width: 767px) {
+  .open-slide {
+    display: none; } }
+
+/* ============= SOLUTIONS - page two ======================== */
+/*================ section HOME   ================*/
+.section-home-solutions {
+  background: url("../img/main-background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  /*================    navbar   ================*/ }
+  .section-home-solutions .bg-overlay {
+    background: rgba(128, 0, 128, 0.3);
+    height: 400px; }
+  .section-home-solutions .main-nav {
+    background: transparent;
+    height: 63px;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 1; }
+    .section-home-solutions .main-nav .open-slide {
+      position: absolute;
+      top: 15px;
+      right: 15px; }
+    .section-home-solutions .main-nav .top-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-gap: 4px;
+      display: grid;
+      grid-template-areas: 'logo main-nav ul'; }
+      .section-home-solutions .main-nav .top-container .social-icon {
+        padding-left: 10px;
+        font-size: 1.2em; }
+    .section-home-solutions .main-nav .logo a {
+      display: grid;
+      font-weight: bold;
+      padding: 0.1rem 0.4rem;
+      color: #fefefe;
+      letter-spacing: 1px;
+      margin-left: 10px;
+      margin-top: -0.4rem;
+      font-size: 2rem; }
+    .section-home-solutions .main-nav ul {
+      display: grid;
+      padding: 0;
+      list-style-type: none;
+      grid-template-columns: repeat(5, 1fr); }
+    .section-home-solutions .main-nav a {
+      display: block;
+      text-decoration: none;
+      padding: 0.3rem;
+      text-align: center;
+      color: #fefefe;
+      font-size: 1rem; }
+    .section-home-solutions .main-nav a:hover {
+      color: #fff; }
+    .section-home-solutions .main-nav .btn-login {
+      background: #b300b3;
+      display: block;
+      border-radius: 2px; }
+  .section-home-solutions .side-nav {
+    height: auto;
+    text-align: center;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(26, 0, 26, 0.9);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; }
+    .section-home-solutions .side-nav a {
+      padding: 10px 10px 10px 30px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #ccc;
+      display: block;
+      transition: 0.3s; }
+    .section-home-solutions .side-nav a:hover {
+      color: #fff; }
+    .section-home-solutions .side-nav .btn-close {
+      position: absolute;
+      top: 0;
+      right: 22px;
+      font-size: 36px;
+      margin-left: 50px; }
+    .section-home-solutions .side-nav .logoHidden {
+      color: #fefefe;
+      position: absolute;
+      top: 0;
+      left: 20px; }
+  .section-home-solutions .main-text {
+    max-width: 800px;
+    margin: auto;
+    padding: 6rem 3rem;
+    text-align: center; }
+    .section-home-solutions .main-text span {
+      color: #fefefe;
+      font-size: 1.5rem; }
+    .section-home-solutions .main-text h1 {
+      color: #fefefe;
+      font-size: 4rem;
+      margin: 0;
+      padding-top: 0.7rem; }
+
+.solutions-section-a {
+  padding: 1rem 0; }
+  .solutions-section-a .blocks {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr; }
+    .solutions-section-a .blocks .block-one {
+      padding: 0 2rem; }
+      .solutions-section-a .blocks .block-one h2 {
+        font-size: 2.5rem;
+        margin: 0; }
+    .solutions-section-a .blocks .block-two {
+      padding: 0 1rem;
+      /* Style the tab content */
+      /* Fade in tabs */ }
+      .solutions-section-a .blocks .block-two .tablinks {
+        border: 0;
+        background: #fff;
+        color: #B300B3;
+        outline: 0;
+        margin-left: 20px;
+        font-weight: bold; }
+      .solutions-section-a .blocks .block-two .tablinks.active {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #5537AF; }
+      .solutions-section-a .blocks .block-two .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        -webkit-animation: fadeEffect 0.7s;
+        animation: fadeEffect 0.7s; }
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.solutions-section-b {
+  background: #EEEDEF;
+  padding: 2rem 0; }
+  .solutions-section-b h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #B300B3;
+    padding: 0 2rem; }
+  .solutions-section-b .text {
+    text-align: center;
+    padding: 0 2rem;
+    color: gray;
+    font-size: 1.1rem; }
+  .solutions-section-b .contactUs {
+    text-align: center;
+    padding: 2rem 2rem 0; }
+    .solutions-section-b .contactUs .btn-signUp {
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      background: #999;
+      color: #fff;
+      border: 0; }
+    .solutions-section-b .contactUs .btn-signUp:hover {
+      background: #5537AF; }
+    .solutions-section-b .contactUs .contact {
+      font-size: 1.5rem;
+      margin-bottom: 10px; }
+      .solutions-section-b .contactUs .contact span {
+        color: #B300B3; }
+  .solutions-section-b .solution-boxes {
+    padding-top: 3rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .solutions-section-b .solution-boxes .box {
+      padding: 0 2rem; }
+      .solutions-section-b .solution-boxes .box .icon-custom {
+        font-size: 2em;
+        margin-right: 5px; }
+      .solutions-section-b .solution-boxes .box span {
+        font-size: 1.4rem; }
+      .solutions-section-b .solution-boxes .box p {
+        margin-top: 5px; }
+
+/* MEDIA QUERIES */
+@media (max-width: 767px) {
+  .section-home-solutions .main-nav ul {
+    display: none; }
+  .section-home-solutions .main-text {
+    max-width: 800px;
+    margin: auto;
+    padding: 5rem 1rem;
+    text-align: center; }
+    .section-home-solutions .main-text span {
+      color: #fefefe;
+      font-size: 1.2rem; }
+    .section-home-solutions .main-text h1 {
+      color: #fefefe;
+      font-size: 3rem;
+      margin: 0;
+      padding-top: 0.7rem; }
+  .solutions-section-a .blocks {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 400px) {
+  .solutions-section-a {
+    margin-left: -1rem;
+    padding-right: 1rem; }
+    .solutions-section-a .blocks .block-one {
+      padding: 0 2rem; }
+      .solutions-section-a .blocks .block-one h2 {
+        font-size: 2rem;
+        margin: 0; }
+  .solutions-section-b {
+    margin-left: -1rem; }
+    .solutions-section-b .solution-boxes {
+      padding-top: 1rem; }
+  .section-home-solutions {
+    height: 300px; }
+    .section-home-solutions .bg-overlay {
+      height: 300px; }
+    .section-home-solutions .main-text {
+      max-width: 800px;
+      margin: auto;
+      padding: 4rem 1rem;
+      margin-left: -2rem;
+      text-align: center; }
+      .section-home-solutions .main-text span {
+        color: #fefefe;
+        font-size: 1.2rem; }
+      .section-home-solutions .main-text h1 {
+        color: #fefefe;
+        font-size: 1.8rem;
+        margin: 0;
+        padding-top: 0.7rem; } }
+
+/* ============= signUp - page three ======================== */
+/*================ section HOME   ================*/
+.section-home-signUp {
+  background: url("../img/main-background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  /*================    navbar   ================*/ }
+  .section-home-signUp .bg-overlay {
+    background: rgba(128, 0, 128, 0.3);
+    height: 400px; }
+  .section-home-signUp .main-nav {
+    background: transparent;
+    height: 63px;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 1; }
+    .section-home-signUp .main-nav .open-slide {
+      position: absolute;
+      top: 15px;
+      right: 15px; }
+    .section-home-signUp .main-nav .top-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-gap: 4px;
+      display: grid;
+      grid-template-areas: 'logo main-nav ul'; }
+      .section-home-signUp .main-nav .top-container .social-icon {
+        padding-left: 10px;
+        font-size: 1.2em; }
+    .section-home-signUp .main-nav .logo a {
+      display: grid;
+      font-weight: bold;
+      padding: 0.1rem 0.4rem;
+      color: #fefefe;
+      letter-spacing: 1px;
+      margin-left: 10px;
+      margin-top: -0.4rem;
+      font-size: 2rem; }
+    .section-home-signUp .main-nav ul {
+      display: grid;
+      padding: 0;
+      list-style-type: none;
+      grid-template-columns: repeat(5, 1fr); }
+    .section-home-signUp .main-nav a {
+      display: block;
+      text-decoration: none;
+      padding: 0.3rem;
+      text-align: center;
+      color: #fefefe;
+      font-size: 1rem; }
+    .section-home-signUp .main-nav a:hover {
+      color: #fff; }
+    .section-home-signUp .main-nav .btn-login {
+      background: #b300b3;
+      display: block;
+      border-radius: 2px; }
+  .section-home-signUp .side-nav {
+    height: auto;
+    text-align: center;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(26, 0, 26, 0.9);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; }
+    .section-home-signUp .side-nav a {
+      padding: 10px 10px 10px 30px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #ccc;
+      display: block;
+      transition: 0.3s; }
+    .section-home-signUp .side-nav a:hover {
+      color: #fff; }
+    .section-home-signUp .side-nav .btn-close {
+      position: absolute;
+      top: 0;
+      right: 22px;
+      font-size: 36px;
+      margin-left: 50px; }
+    .section-home-signUp .side-nav .logoHidden {
+      color: #fefefe;
+      position: absolute;
+      top: 0;
+      left: 20px; }
+  .section-home-signUp .main-text {
+    max-width: 800px;
+    margin: auto;
+    padding: 6rem 3rem;
+    text-align: center; }
+    .section-home-signUp .main-text span {
+      color: #fefefe;
+      font-size: 1.5rem; }
+    .section-home-signUp .main-text h1 {
+      color: #fefefe;
+      font-size: 4rem;
+      margin: 0;
+      padding-top: 0.7rem; }
+
+.signUp-section-a {
+  padding: 1rem 0; }
+  .signUp-section-a .blocks {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr; }
+    .signUp-section-a .blocks .block-one {
+      padding: 0 2rem; }
+      .signUp-section-a .blocks .block-one .text-content {
+        padding: 1rem 0; }
+        .signUp-section-a .blocks .block-one .text-content h3 {
+          font-size: 2rem;
+          margin: 0; }
+        .signUp-section-a .blocks .block-one .text-content p {
+          margin: 0.8rem 0; }
+    .signUp-section-a .blocks .block-two {
+      padding: 0 1rem; }
+      .signUp-section-a .blocks .block-two .signUp-form {
+        background: #e6e6e6;
+        padding: 1rem 0; }
+        .signUp-section-a .blocks .block-two .signUp-form .form-group {
+          padding: 1rem; }
+          .signUp-section-a .blocks .block-two .signUp-form .form-group .form-control {
+            background: transparent;
+            width: 95%;
+            padding: 1rem 0 1rem 1rem;
+            border: 0;
+            border-bottom: 2px solid #a6a6a6; }
+          .signUp-section-a .blocks .block-two .signUp-form .form-group .form-control:focus, .signUp-section-a .blocks .block-two .signUp-form .form-group .form-control:active {
+            outline: 0; }
+      .signUp-section-a .blocks .block-two .btn-submit {
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        background: #B300B3;
+        color: #fefefe;
+        border: 0;
+        outline: 0; }
+
+@media (max-width: 767px) {
+  .section-home-signUp .main-nav ul {
+    display: none; }
+  .signUp-section-a .blocks {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    padding: 0 0.5rem; }
+  .section-home-signUp .main-text {
+    max-width: 800px;
+    margin: auto;
+    padding: 5rem 1rem;
+    text-align: center; }
+    .section-home-signUp .main-text span {
+      color: #fefefe;
+      font-size: 1.2rem; }
+    .section-home-signUp .main-text h1 {
+      color: #fefefe;
+      font-size: 3rem;
+      margin: 0;
+      padding-top: 0.7rem; } }
+
+@media (max-width: 400px) {
+  .section-home-signUp {
+    height: 300px; }
+    .section-home-signUp .bg-overlay {
+      height: 300px; }
+    .section-home-signUp .main-text {
+      max-width: 800px;
+      margin: auto;
+      padding: 4rem 1rem;
+      text-align: center; }
+      .section-home-signUp .main-text span {
+        color: #fefefe;
+        font-size: 1.2rem; }
+      .section-home-signUp .main-text h1 {
+        color: #fefefe;
+        font-size: 1.8rem;
+        margin: 0;
+        padding-top: 0.7rem; } }
